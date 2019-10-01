@@ -1,0 +1,5 @@
+=================
+wsgitraining.site
+=================
+
+User documentation

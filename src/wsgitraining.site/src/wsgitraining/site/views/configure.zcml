@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="wsgitraining.site">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+     name="sentry-event-view"
+     for="Products.CMFCore.interfaces.IFolderish"
+     class=".sentry_event_view.SentryEventView"
+     template="sentry-event-view.pt"
+     permission="zope2.View"
+     />
+
+  <browser:page
+     name="long-request-view"
+     for="*"
+     class=".long_request_view.LongRequestView"
+     template="long-request-view.pt"
+     permission="zope2.View"
+     />
+
+
+</configure>

@@ -1,0 +1,6 @@
+[report]
+include =
+    src/wsgitraining/*
+omit =
+    */test*
+    */upgrades/*
