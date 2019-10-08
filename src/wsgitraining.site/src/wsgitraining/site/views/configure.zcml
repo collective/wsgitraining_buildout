@@ -7,6 +7,22 @@
   -*- extra stuff goes here -*-
 
   <browser:page
+    name="attribute-error-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".attribute_error_view.AttributeErrorView"
+    template="attribute_error_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="debugging-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".debugging_view.DebuggingView"
+    template="debugging_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
      name="sentry-event-view"
      for="Products.CMFCore.interfaces.IFolderish"
      class=".sentry_event_view.SentryEventView"
